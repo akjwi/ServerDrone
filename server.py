@@ -82,11 +82,8 @@ ip = args.target
 api = "http://ip-api.com/json/"
 
 try:
+
   
-    
-print("informnation website:")
-
-
 
         data = requests.get(api+ip).json()
         sys.stdout.flush()
@@ -109,6 +106,10 @@ print("informnation website:")
         print (b, "[Time zone]:", data['timezone'])
         print(red+"---------------"+red)
         print (a, "[Zip code]:", data['zip'])
+        
+        
+        
+        print("informnation website successful")
         
         
         
